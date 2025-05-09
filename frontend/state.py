@@ -87,9 +87,15 @@ class State(rx.State):
         # Yield here to clear the frontend input before continuing.
         yield
 
-        # Inicializar o cliente da OpenAI com API key
-        # A API key será obtida da variável de ambiente OPENAI_API_KEY
-        client = AsyncOpenAI()
+        # Inicializar o cliente da OpenAI com API key explícita
+        api_key = os.environ.get("OPENAI_API_KEY")
+        if not api_key:
+            # Caso a variável de ambiente não esteja disponível, tenta ler do arquivo .env
+            from dotenv import load_dotenv
+            load_dotenv()
+            api_key = os.environ.get("OPENAI_API_KEY")
+
+        client = AsyncOpenAI(api_key=api_key)
         
         # Preparar a lista de mensagens para a API da OpenAI
         messages = [
