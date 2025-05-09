@@ -4,7 +4,7 @@ from frontend.state import State
 
 def template_card(icon: str, title: str, description: str, color: str) -> rx.Component:
     return rx.el.button(
-        rx.icon(tag=icon, color=rx.color(color, 9), size=16),
+        rx.icon(tag=icon, color=rx.color(color, 9), size=40),
         rx.text(title, class_name="font-medium text-slate-11 text-sm"),
         rx.text(description, class_name="text-slate-10 text-xs"),
         class_name="relative align-top flex flex-col gap-2 border-slate-4 bg-slate-1 hover:bg-slate-3 shadow-sm px-3 pt-3 pb-4 border rounded-2xl text-[15px] text-start transition-colors",
@@ -14,33 +14,42 @@ def template_card(icon: str, title: str, description: str, color: str) -> rx.Com
 
 def templates() -> rx.Component:
     return rx.box(
-        rx.image(
-            src="/reflex_x_llamaindex.svg",
-            class_name="opacity-70 w-auto h-11 pointer-events-none",
+        rx.vstack(  # Using vstack to stack image and text vertically
+            rx.image(
+                src="/investir-emvc.png",  # Correct image path
+                alt="Quero investir",
+                class_name="max-h-[250px] mx-auto object-contain",  # Adjust class_name as needed
+            ),
+            rx.text(
+                "Posso investir até 1 Milhão de Reais na sua carreira! Quer saber como? Vamos conversar!",  # Replace with your text
+                class_name="text-slate-16 text-lg font-bold mt-2",  # Increased font size and added bold styling
+            ),
+            align="center",  # Center the image and text
+            spacing="2",  # Add some space between image and text
         ),
         rx.box(
             template_card(
                 "message-circle",
-                "Ask a question",
-                "What is the capital of France?",
+                "Pergunte algo sobre a educamais.tech",
+                "Vocês vão ganhar o Startup Experience?",
                 "grass",
             ),
             template_card(
                 "calculator",
-                "Solve a math problem",
-                "What is the square root of 144?",
+                "Qual o objetivo da Startup?",
+                "Como eu recebo esses investimentos?",
                 "tomato",
             ),
             template_card(
                 "globe",
-                "Get a fun fact",
-                "Tell me an interesting fact about dolphins.",
+                "Como vocês vão investir 1 milhão em cada aluno?",
+                "Conte mais sobre os parceiros do projeto.",
                 "blue",
             ),
             template_card(
                 "book",
-                "Recommend a book",
-                "What's a good mystery novel for beginners?",
+                "Recomende um roteiro de estudos",
+                "Qual a melhor trilha para iniciantes?",
                 "amber",
             ),
             class_name="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full",
