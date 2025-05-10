@@ -27,7 +27,7 @@ Ele será utilizado para:
 - [ ] **RF01**: O chatbot deve ser capaz de responder perguntas com base na documentação interna do projeto.
 - [ ] **RF02**: Deve ser possível inserir novos documentos (.md, .pdf, etc) para atualizar o contexto do chatbot.
 - [ ] **RF03**: O chatbot deve responder todas as perguntas dos stakeholders e **bloquear perguntas que não estejam relacionadas ao projeto Startup Experience Estácio**, como medida de segurança para proteger nossas chaves de API.
-- [ ] **RF04**: O sistema deve permitir perguntas livres dos usuários via interface web.
+- [ ] **RF04**: O sistema deve permitir perguntas referentes ao Startup Experience - Estácio dos usuários via interface web.
 - [ ] **RF05**: O chatbot deve solicitar feedback do usuário após cada resposta.
 - [ ] **RF06**: O chatbot deve exibir uma mensagem informando que as perguntas poderão ser usadas para aprimorar a IA e o projeto.
 - [ ] **RF07**: Deve oferecer sugestões de perguntas iniciais para orientar novos usuários.
