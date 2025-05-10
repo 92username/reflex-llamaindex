@@ -1,6 +1,6 @@
 import os
 from llama_index.core import SimpleDirectoryReader, VectorStoreIndex, StorageContext, load_index_from_storage
-from llama_index.llms import OpenAI
+from llama_index.llms.openai import OpenAI
 
 INDEX_DIR = "index_store"
 DOCS_DIR = "docs"
