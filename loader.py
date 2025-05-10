@@ -1,4 +1,18 @@
 from llama_index.core import SimpleDirectoryReader, VectorStoreIndex, StorageContext, load_index_from_storage
+"""
+This module provides functionality to load or create a vector index from markdown documents.
+
+The index is used for efficient document retrieval and search operations. If an existing
+index is found in the specified directory, it loads the index from storage. Otherwise,
+it creates a new index by reading markdown files from the docs directory.
+
+Constants:
+    INDEX_DIR (str): Directory path where the index is stored.
+    DOCS_DIR (str): Directory path where markdown documents are located.
+
+Functions:
+    get_index(): Loads an existing index or creates a new one from markdown documents.
+"""
 import os
 
 INDEX_DIR = "index_store"
