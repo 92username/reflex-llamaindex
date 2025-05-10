@@ -17,7 +17,12 @@ def get_index():
     llm = OpenAI(
         model="gpt-4o-mini",
         api_key=os.getenv("OPENAI_API_KEY"),
-        temperature=0.2
+        temperature=0.7,
+        system_prompt=(
+        "Você é um assistente que responde apenas com base na documentação fornecida. "
+        "Suas respostas devem ser sempre em Português (Brasil), mesmo que a pergunta esteja em outro idioma. "
+        "Se não souber a resposta, diga que não sabe ou informe que a informação não está disponível."
+    )
     )
 
     if not os.path.exists(INDEX_DIR):
