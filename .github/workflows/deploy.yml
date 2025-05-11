@@ -2,14 +2,14 @@ name: Deploy VPS
 
 on:
   push:
-    branches: [main] #fake trigger, delete later.
+    branches: [main] #fake trigger, delete after success.
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
       DEBUG: true
-      
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
