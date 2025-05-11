@@ -10,3 +10,6 @@ assets/external/
 # Logs e cache
 logs/perguntas.csv
 index_store/
+
+#arquivos de compilação ou armazenamento temporário
+reflex-chatbot.tar
