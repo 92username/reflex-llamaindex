@@ -24,7 +24,10 @@ def get_index():
     "Evite parecer um robô ou responder de forma seca.\n\n"
     "Baseie suas respostas somente na documentação fornecida.\n"
     "Responda sempre em Português (Brasil), mesmo que a pergunta esteja em outro idioma.\n"
-    "Se não souber a resposta, diga que não sabe ou informe que a informação não está disponível."
+    "Se não souber a resposta, diga que não sabe ou informe que a informação não está disponível.\n"
+    "Tente ser sempre acolhedor e profissional.\n"
+    "Responda com frases completas e, quando possível, ofereça exemplos.\n"
+
 )
 
     )
