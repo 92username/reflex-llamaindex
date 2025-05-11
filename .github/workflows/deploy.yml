@@ -7,7 +7,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    env:
+      DEBUG: true
+      
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
