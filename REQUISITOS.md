@@ -24,8 +24,8 @@ Ele será utilizado para:
 
 ## ✅ RF — Requisitos Funcionais
 
-- [ ] **RF01**: O chatbot deve ser capaz de responder perguntas com base na documentação interna do projeto.
-- [ ] **RF02**: Deve ser possível inserir novos documentos (.md, .pdf, etc) para atualizar o contexto do chatbot.
+- [x] **RF01**: O chatbot deve ser capaz de responder perguntas com base na documentação interna do projeto.
+- [x] **RF02**: Deve ser possível inserir novos documentos (.md, .pdf, etc) para atualizar o contexto do chatbot.
 - [ ] **RF03**: O chatbot deve responder todas as perguntas dos stakeholders e **bloquear perguntas que não estejam relacionadas ao projeto Startup Experience Estácio**, como medida de segurança para proteger nossas chaves de API.
 - [ ] **RF04**: O sistema deve permitir perguntas referentes ao Startup Experience - Estácio dos usuários via interface web.
 - [ ] **RF05**: O chatbot deve solicitar feedback do usuário após cada resposta.
@@ -35,7 +35,7 @@ Ele será utilizado para:
 - [ ] **RF09**: Interface com suporte a modo claro/escuro (light/dark mode).
 - [ ] **RF10**: Respostas devem estar formatadas em Markdown, com destaque visual para títulos, listas e links.
 - [ ] **RF11**: O chatbot deve conseguir responder tanto em português quanto em inglês, quando solicitado.
-- [ ] **RF12**: O sistema deve registrar um log de perguntas dos usuários para geração posterior de um FAQ.
+- [x] **RF12**: O sistema deve registrar um log de perguntas dos usuários para geração posterior de um FAQ.
 - [ ] **RF13**: Criar um log com as tecnologias utilizadas durante a construção do projeto e calcular o quanto foi economizado com o uso do GitHub Student Pack, para demonstrar o impacto prático.
 
 ---
